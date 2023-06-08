@@ -1,24 +1,21 @@
 import { Branding } from './skel/Branding/Branding'
 import { NavBar } from './skel/NavBar/NavBar'
 import { ShoppingCart } from './skel/ShoppingCart/ShoppingCart'
-import {Route, Routes} from 'react-router-dom'
-
-function Constants() {
-  return (
-    <div>
-        <Branding />
-        <NavBar />
-        <ShoppingCart />
-      </div>
-  )  
-}
+import { ItemListContainer } from './skel/ItemListContainer/ItemListContainer'
+import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
 
 function App() {
   return (
     <div className='App'>
+      <Router>
+        <Link to={`/`}><Branding/></Link>
+        <NavBar />
+        <Link to={`/cart`}><ShoppingCart /></Link>
         <Routes>
-          <Route path='/' element={<Constants />}/>
+          <Route path='/' element={<ItemListContainer />}/>
         </Routes>
+      </Router>
+        
     </div>
   )
 }
