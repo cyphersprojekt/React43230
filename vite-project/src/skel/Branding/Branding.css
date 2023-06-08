@@ -1,8 +1,9 @@
 h1, h2{
-    font-family: 'Oswald', sans-serif;
-    width: 100%;
-    position: fixed;
-    top:45px;
-    text-align:center;
-    color:#fbfbfb;
-  }
+  font-family: 'Oswald', sans-serif;
+  width: 100%;
+  position: sticky; /* change fixed to sticky */
+  top: 0; /* change to 0 */
+  text-align:center;
+  color:#fbfbfb;
+  z-index: 1000; /* Add a z-index */
+}

@@ -16,8 +16,8 @@
 }
 nav{
   width: 100%;
-  position: fixed;
-  top:160px;
+  position: sticky;
+  top:170px;
   text-align:center;
 }
 nav a{
@@ -79,9 +79,3 @@ nav a:hover:before{
     transform:translateY(0);
   }
 }
-
-/* @for $i from 1 through 5 {
-  nav a:nth-child(#{$i}){
-    animation:show .2s #{$i*0.1+1}s ease 1 both;
-  }
-} */

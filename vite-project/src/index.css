@@ -8,6 +8,17 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.cards {
+
+  display: grid;
+  
+  grid-template-columns: repeat(3, 1fr);
+  
+  grid-auto-rows: auto;
+  
+  grid-gap: 1rem;
+  
+  }
 
 /* a {
   font-weight: 500;

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import ItemCard from "../ItemCard/ItemCard";
-
+import '../Items.css'
 export const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
 
@@ -12,7 +12,7 @@ export const ItemListContainer = () => {
 
     useEffect(() => {fetchData();}, [fetchData]);
     return (
-        <div>
+        <div className="cards">
             {products.products?.map((product) => {
                 return (
                     <ItemCard key={product.id} item={product}/>

@@ -1,7 +1,7 @@
 import { Branding } from './skel/Branding/Branding'
 import { NavBar } from './skel/NavBar/NavBar'
 import { ShoppingCart } from './skel/ShoppingCart/ShoppingCart'
-import { ItemListContainer } from './skel/ItemListContainer/ItemListContainer'
+import { ItemListContainer } from './skel/Items/ItemListContainer/ItemListContainer'
 import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
 
 function App() {
